@@ -29,10 +29,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t lmmt99/docker-graphql:0.0.2 .
+        docker build -t lmmt99/docker-graphql:latest .
 
     - name: Push Docker Image
       run: |
         docker push lmmt99/docker-graphql:0.0.2
+        docker push lmmt99/docker-graphql:latest
 
 
 
